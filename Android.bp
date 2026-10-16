@@ -1,0 +1,50 @@
+package {
+    default_applicable_licenses: ["external_diffutils_license"],
+}
+
+license {
+    name: "external_diffutils_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-GPL-3.0-or-later",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+cc_prebuilt_binary {
+    name: "sdiff",
+    srcs: ["bin/sdiff"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "diff",
+    srcs: ["bin/diff"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "cmp",
+    srcs: ["bin/cmp"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "diff3",
+    srcs: ["bin/diff3"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}

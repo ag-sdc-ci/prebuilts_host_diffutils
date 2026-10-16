@@ -1,0 +1,5 @@
+shadow prebuilt repo: diffutils (host)
+  arch package: diffutils v3.12-2, Arch Linux core repo
+  api-level: universal (CLI binary host: sdiff, diff, cmp, diff3)
+  layout: diffutils-*.pkg.tar.zst at root; extracted bin/ host binaries; Android.bp providing sdiff, diff, cmp, diff3
+  date: 2026-10-16
